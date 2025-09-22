@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbqt71o6aw11c"]
+
+[ext_resource type="PackedScene" uid="uid://bitxdu5xb7ct3" path="res://scene/steve??.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://cjdr2pcpiljyv" path="res://scene/main.gd" id="1_v0l8b"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_v0l8b")
+
+[node name="Capoeira2" parent="." instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.308057, 1.5112987, 0)
+
+[node name="Capoeira3" parent="." instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.91498613, 1.5112987, 0)
+
+[node name="Capoeira" parent="." instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7141786, 1.5112987, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5739822, 9.869345)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9179555, 0.39668337, 0, -0.39668337, 0.9179555, 0.0143117905, 9.717501, 10.078048)
+directional_shadow_mode = 0
